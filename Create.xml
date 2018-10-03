@@ -1,0 +1,183 @@
+<WorkOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <RoutingElements>
+        <Origin>SI7</Origin>
+        <!--  this is not filled out on messages that are sent. For messages that are received, this the system/client whom first created the workorder -->
+        <Source>SI7</Source>
+        <!--  This is the sender of the message -->
+        <Target>FSELite</Target>
+        <!--  this is the recipient of the message -->
+        <MessageType>NEWWO</MessageType>
+        <!--  this is the type of message  Finite list in Project document -->
+  
+    
+    </RoutingElements>
+    <Keys>
+        <Source_WO_ID>WEB-12345</Source_WO_ID>
+        <!--  the workorder number of the sender of the message:  SI7Object."workOrderNumber"  -->
+        <Unified_WO_ID>FSELITE2</Unified_WO_ID>
+        <!--  This is managed and created by the WOBUS -->
+        <Target_WO_ID />
+        <!--  this is the workorder number of the recipient of the message -->
+        <SourceCompositeElements>
+            <!--  this is custom for each system/client we connect to -->
+            <SCElement>
+                <TypeCode>ORGID</TypeCode>
+                <!--  ORGID  -->
+                <Value>SI7</Value>
+                <!--  Service Insight 7 -->
+                <Description>Service Insight</Description>
+                <!--  Service  Insight -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>CustomerCode</TypeCode>
+                <!--  CustomerCode -->
+                <Value>C10284</Value>
+                <!--  SI7-IronMtn -->
+                <Description>Customer Deutsche Bank UK</Description>
+                <!--  Iron Mountian -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>Vendor</TypeCode>
+                <!--  Vendor -->
+                <Value>12312334</Value>
+                <!--   SI7Object.assignedName -->
+                <Description>FMP Facility Source Vendor Code</Description>
+                <!--   SI7Object.assignedName -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>WorkSiteID</TypeCode>
+                <!--   WorkSiteID -->
+                <Value>WEL1233</Value>
+                <!--   SI7Object.Level_4 -->
+                <Description>Wells Fargo- East Main PHX</Description>
+                <!--   SI7Object.Level_4 -->
+      
+            
+            </SCElement>
+        </SourceCompositeElements>
+    </Keys>
+     <WOBusCreatedDate>2018-10-01T12:00:00:00</WOBusCreatedDate>
+    <!--  SI7Object.dateEntered -->
+    <WODescription>Please fix my air conditioning Unit.   I am too warm</WODescription>
+    <!--  SI7Object.problemDescription -->
+    <WORequestor>John Smith</WORequestor>
+    <!--  SI7Object.requesterName  -->
+    <WORequestorEmail>John.Smith@abc.com</WORequestorEmail>
+    <!--  BLANK -->
+    <WOClassification>HVAC</WOClassification>
+    <!--  BLANK   SI7Object.problemCode -->
+    <WORequiredCraft>HVAC</WORequiredCraft>
+    <!--  SI7Object.EquipStyle -->
+    <WOResponseTime>04:00</WOResponseTime>
+    <WOPriority>P2</WOPriority>
+    <!--  SI7Object.Priority -->
+    <WOFixTime>08:00</WOFixTime>
+    <!--  BLANK -->
+    <WOTargetCompletionDate>2018-10-01T12:00:00:00</WOTargetCompletionDate>
+    <!--  SI7Object.completionTarget -->
+    <WOScheduledStartDateTime>null</WOScheduledStartDateTime>
+    <!--  SI7Object.responseTarget -->
+    <WOScheduledCompleteDateTime>null</WOScheduledCompleteDateTime>
+    <!--  SI7Object.completionTarget -->
+    <WOActualStartDateTime>null</WOActualStartDateTime>
+    <!--  SI7Object.responseTarget -->
+    <WOActualCompleteDateTime>null</WOActualCompleteDateTime>
+    <!--  SI7Object.dateComplete -->
+    <WOProviderCompanyName>Northwest Pallet Services, LLC</WOProviderCompanyName>
+    <!--   SI7Object.AssignedName -->
+    <WOProviderCode>NOR61008IL</WOProviderCode>
+    <!--   SI7Object.AssignedName -->
+    <WOPONumber>123</WOPONumber>
+    <!--   SI7Object.costcenter -->
+    <WOProjectNumber>some other number</WOProjectNumber>
+    <!--   SI7Object.Reference -->
+    <WOReturnToServiceDateTime />
+    <!--   SI7Object.dateComplete -->
+    <WOCompletedDateTime />
+    <!--   SI7Object.dateComplete -->
+    <WOCurrentStatus>INPRG</WOCurrentStatus>
+    <!--   SI7Object.status -->
+    <WOWarrantyStatus>In Warranty</WOWarrantyStatus>
+    <!--  BLANK -->
+    <WONotToExceedLimit>0</WONotToExceedLimit>
+    <!--   SI7Object.nte -->
+    <WOCurrencyCode>CND</WOCurrencyCode>
+    <!--   SI7Object.currencyCode  -->
+    <WOGeneralLedgerCode />
+    <!--  BLANK -->
+    <WOWorkOrderType >Work Order</WOWorkOrderType>
+    <!--  BLANK  this will change when we look at real data-->
+    <WOCapitalizationCode />
+    <!--  BLANK  this will change when we look at real data-->
+    <WOServiceLocation>
+        <CompanyName>Deutsche Bank</CompanyName>
+        <!--  SubscriberCheck.ClientName -->
+        <ServiceLocationID>FS-TEST</ServiceLocationID>
+        <!--     SI7Object.level_2   -->
+        <MallName />
+        <!--    SI7Object.level_1 + SI7Object.level_2 + SI7Object.level_3  -->
+        <LocationNotes />
+        <!--   SI7Object.locationDescription  -->
+        <CostCenterCode>10105000</CostCenterCode>
+        <!--   SI7Object.costCenter  -->
+        <TimeZoneOffset>-4</TimeZoneOffset>
+        <!--  BLANK -->
+        <WorkLocation>OTHER</WorkLocation>
+        <!--  SI7Object.Level3 -->
+        <TimeZone>EDT</TimeZone>
+        <!--  SI7Object.timezone -->
+        <ServiceAddress>
+            <StreetAddress1>
+                <AddressLine>Address Line 1</AddressLine>
+                <AddressLine>Address Line 3</AddressLine>
+            </StreetAddress1>
+            <StreetAddress2>
+                <AddressLine>Address Line 2</AddressLine>
+                <AddressLine>Address Line 4</AddressLine>
+            </StreetAddress2>
+            <City>City</City>
+            <PostalCode>PostalCode</PostalCode>
+            <StateProv />
+            <CountryCode />
+            <Lat>53.234234</Lat>
+            <Long>2.3454454</Long>
+        </ServiceAddress>
+        <SiteContact>Steve Giles</SiteContact>
+        <!--  SI7Object.siteContactName -->
+        <SiteContactTel>24982734927</SiteContactTel>
+        <!--  SI7Object.siteContactPhone -->
+        <SiteContactEmail>Steve.Giles@email.com</SiteContactEmail>
+        <!--  BLANK -->
+  
+    
+    </WOServiceLocation>
+    <WOStatuses>
+     
+    </WOStatuses>
+    <WOComments>
+      
+    </WOComments>
+    <WOTasks>
+        
+    </WOTasks>
+    <WOAdditionalDetails>
+       
+    </WOAdditionalDetails>
+    <WOIVRCheckInOuts>
+       
+    </WOIVRCheckInOuts>
+    <WOAttachments>
+        
+    </WOAttachments>
+    <WOInvoice>
+       
+    </WOInvoice>
+    <WOQuotes>
+    </WOQuotes>
+</WorkOrder>

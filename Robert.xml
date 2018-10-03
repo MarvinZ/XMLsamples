@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!--  Mapped explicitly --> 
+<WorkOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<RoutingElements>
+		<Origin></Origin> <!--  this is not filled out on messages that are sent. For messages that are received, this the system/client whom first created the workorder -->
+		<Source>SI7</Source> <!--  This is the sender of the message -->
+		<Target>FSELite</Target> <!--  this is the recipient of the message -->
+		<MessageType>NEW </MessageType> <!--  this is the type of message  Finite list in Project document -->
+	</RoutingElements>
+	<Keys>
+		<Source_WO_ID>198273487</Source_WO_ID> <!--  the workorder number of the sender of the message:  SI7Object."workOrderNumber"  -->
+		<Unified_WO_ID>GB_2340983_XXX</Unified_WO_ID> <!--  This is managed and created by the WOBUS -->
+		<Target_WO_ID>2342342342</Target_WO_ID> <!--  this is the workorder number of the recipient of the message -->
+		
+		
+		<SourceCompositeElements>  <!--  this is custom for each system/client we connect to -->
+			<SCElement>
+				<TypeCode>ORGID</TypeCode>      <!--  ORGID  -->
+				<Value>SI7</Value>  	   <!--  Service Insight 7 -->
+				<Description>Service Insight</Description> <!--  Service  Insight -->
+			</SCElement>
+			<SCElemet>
+				<TypeCode>SITEID</TypeCode>  <!--  SITEID --> 
+
+
+				<Value>W37</Value>  <!--    SI7Object.level_1 + SI7Object.level_2 + SI7Object.level_3  -->
+				<Description>Operations UK</Description>  <!--    SI7Object.level_1 + SI7Object.level_2 + SI7Object.level_3  -->
+			</SCElemet>
+			<SCElement>
+				<TypeCode>CustomerCode</TypeCode> <!--  CustomerCode -->
+				<Value>C10284</Value> <!--  SI7-IronMtn -->
+				<Description>Customer Deutsche Bank UK</Description> <!--  Iron Mountian --> 
+			</SCElement>
+			<SCElement>
+				<TypeCode>Vendor</TypeCode> <!--  Vendor -->
+				<Value>12312334</Value> <!--   SI7Object.assignedName -->
+				<Description>FMP Facility Source Vendor Code</Description> <!--   SI7Object.assignedName -->
+			</SCElement>
+			<SCElement>
+				<TypeCode>WorkSiteID</TypeCode>  <!--   WorkSiteID -->
+				<Value>WEL1233</Value> <!--   SI7Object.Level_4 -->
+				<Description>Wells Fargo- East Main PHX</Description> <!--   SI7Object.Level_4 -->
+			</SCElement>
+		</SourceCompositeElements>
+	</Keys>
+	<WOBusCreatedDate>2018-10-01T12:00:00:00</WOBusCreatedDate>   <!--  SI7Object.dateEntered --> 
+	<WODescription>Please fix my air conditioning Unit.   I am too warm</WODescription>   <!--  SI7Object.problemDescription -->
+	<WORequestor>John Smith</WORequestor>  <!--  SI7Object.requesterName  -->
+	<WORequestorEmail>John.Smith@abc.com</WORequestorEmail> <!--  BLANK -->
+	<WOClassification>123</WOClassification>  <!--  BLANK   SI7Object.problemCode --> 
+ 
+	<WORequiredCraft>Plumber</WORequiredCraft> <!--  SI7Object.EquipStyle -->
+	<WOResponseTime>04:00</WOResponseTime>   
+	<WOPriority>P2</WOPriority> <!--  SI7Object.Priority -->
+	<WOFixTime>08:00</WOFixTime> <!--  BLANK --> 
+	<WOTargetCompletionDate>2018-10-01T12:00:00:00</WOTargetCompletionDate> <!--  SI7Object.completionTarget -->
+	<WOScheduledStartDateTime>null</WOScheduledStartDateTime> <!--  SI7Object.responseTarget -->
+	<WOScheduledCompleteDateTime>null</WOScheduledCompleteDateTime>  <!--  SI7Object.completionTarget -->
+	<WOActualStartDateTime>null</WOActualStartDateTime>    <!--  SI7Object.responseTarget -->
+	<WOActualCompleteDateTime>null</WOActualCompleteDateTime>  <!--  SI7Object.dateComplete -->
+	<WOProviderCompanyName>Northwest Pallet Services, LLC</WOProviderCompanyName> <!--   SI7Object.AssignedName --> 
+	<WOProviderCode>NOR61008IL</WOProviderCode> <!--   SI7Object.AssignedName --> 
+	<WOPONumber>123</WOPONumber>  <!--   SI7Object.costcenter --> 
+	<WOProjectNumber>some other number</WOProjectNumber> <!--   SI7Object.Reference --> 
+	<WOReturnToServiceDateTime/> <!--   SI7Object.dateComplete --> 
+	<WOCompletedDateTime/> <!--   SI7Object.dateComplete --> 
+	<WOCurrentStatus>INPRG</WOCurrentStatus> <!--   SI7Object.status --> 
+	<WOWarrantyStatus>In Warranty</WOWarrantyStatus> <!--  BLANK --> 
+	<WONotToExceedLimit>0</WONotToExceedLimit> <!--   SI7Object.nte --> 
+	<WOCurrencyCode>CND</WOCurrencyCode> <!--   SI7Object.currencyCode  --> 
+	<WOGeneralLedgerCode/>  <!--  BLANK -->  
+	<WOWorkOrderType/> <!--  BLANK  this will change when we look at real data--> 
+	<WOCapitalizationCode/> <!--  BLANK  this will change when we look at real data--> 
+	<WOServiceLocation>
+		<CompanyName>Deutsche Bank</CompanyName> <!--  SubscriberCheck.ClientName -->
+		<ServiceLocationID>WEL12234</ServiceLocationID>  <!--     SI7Object.level_2   -->
+		<MallName></MallName> <!--    SI7Object.level_1 + SI7Object.level_2 + SI7Object.level_3  -->
+		<LocationNotes/>   <!--   SI7Object.locationDescription  --> 
+		<CostCenterCode>10105000</CostCenterCode>  <!--   SI7Object.costCenter  --> 
+		<TimeZoneOffset>-4</TimeZoneOffset> <!--  BLANK -->
+		<WorkLocation>Rear Bathroom</WorkLocation>. <!--  SI7Object.Level3 -->
+		<TimeZone>EDT</TimeZone>  <!--  SI7Object.timezone -->
+		<ServiceAddress>
+			<StreetAddress1>
+				<AddressLine>Address Line 1</AddressLine>
+				<AddressLine>Address Line 3</AddressLine>
+			</StreetAddress1>
+			<StreetAddress2>
+				<AddressLine>Address Line 2</AddressLine>
+				<AddressLine>Address Line 4</AddressLine>
+			</StreetAddress2>
+			<City>City</City>
+			<PostalCode>PostalCode</PostalCode>
+			<StateProv/>
+			<CountryCode/>
+			<Lat>53.234234</Lat>
+			<Long>2.3454454</Long>
+		</ServiceAddress>
+		 <SiteContact>Steve Giles</SiteContact> <!--  SI7Object.siteContactName -->
+        <SiteContactTel>24982734927</SiteContactTel> <!--  SI7Object.siteContactPhone -->
+		<SiteContactEmail>Steve.Giles@email.com</SiteContactEmail> <!--  BLANK --> 
+	</WOServiceLocation>
+	<WOStatuses>
+		<Status>  <!--  append the current status with current datetime NOW() as a new object --> 
+			<WOStatus>Created</WOStatus>  <!--  WOCurrentStatus --> 
+			<WOStatusDateTime>2018-10-01T12:00:00:00</WOStatusDateTime> <!--  CurrentDateTime --> 
+			<WOStatusChangeUser/> <!--  SI7Object.requesterName --> 
+		</Status>
+	</WOStatuses>
+	<WOComments>
+		<Comment compare="true" >  
+			<Id>1</Id>   <!--  SI7Object.siOrderLog.commentNumber -->
+			<Subject compare="true" >WO12 WEB-3142491 - load test subject</Subject> <!--  SI7Object.siOrderLog.transType + " - " + SI7Object.siOrderLog.assignment --> 
+			<Body compare="true" >load test comment -06292018</Body> <!--  SI7Object.siOrderLog.comment --> 
+			<CreateUser>null</CreateUser> <!--  SI7Object.siOrderLog.enteredBy --> 
+			<CreateDateTime>2018-07-02T16:31:22.353Z</CreateDateTime> <!--  SI7Object.siOrderLog.logEntryDate --> 
+			<ScheduledDate>2018-08-22T13:43:59.814Z</ScheduledDate>  <!--  SI7Object.siOrderLog.logEntryDate --> 
+			<FollowUpDate>2018-08-22T13:43:59.814Z</FollowUpDate>   <!--  SI7Object.siOrderLog.logEntryDate --> 
+			<MailedTo/>  <!--  BLANK --> 
+			<CommentTypeID>null</CommentTypeID> <!--  BLANK --> 
+			<IsEmailHighImportance>false</IsEmailHighImportance> <!--  BLANK --> 
+		</Comment>
+
+	</WOComments>
+	<WOTasks>
+		<Task>
+			<TaskNo>1</TaskNo> <!--  BLANK --> 
+			<TaskDescription>Make safe</TaskDescription> <!--  BLANK --> 
+			<TaskCreateUser>null</TaskCreateUser>  <!--  BLANK --> 
+			<TaskCreateDateTime>2018-07-02T16:31:22.353Z</TaskCreateDateTime>  <!--  BLANK --> 
+		</Task>
+
+	</WOTasks>
+	<WOAdditionalDetails>
+		<Detail>
+			<DetailType>RequiredTool</DetailType>   <!--  BLANK -->  
+			<DetailDescription>Special Tool</DetailDescription>  <!--  BLANK --> 
+			<DetailCreateUser>null</DetailCreateUser>  <!--  BLANK --> 
+			<DetailCreateDateTime>2018-07-02T16:31:22.353Z</DetailCreateDateTime>  <!--  BLANK -->  
+		</Detail>
+
+	</WOAdditionalDetails>
+	<WOIVRCheckInOuts>
+		<CheckInOut>  
+			<Source>MobileApp</Source>   <!--  BLANK --> 
+			<CheckINDateTime>2018-10-01T12:00:00:00</CheckINDateTime> <!--  BLANK --> 
+			<CheckOutDateTime>2018-10-01T12:00:00:00</CheckOutDateTime> <!--  BLANK --> 
+			<CreateUser>null</CreateUser> <!--  BLANK --> 
+			<CreateDateTime>2018-07-02T16:31:22.353Z</CreateDateTime> <!--  BLANK --> 
+		</CheckInOut>
+
+	</WOIVRCheckInOuts>
+	<WOAttachments>
+	
+		<Attachment>
+			<AttatchmentType>imagelink</AttatchmentType>  <!--  BLANK --> 
+			<AttachmentDesc>Picture of broken thing</AttachmentDesc> <!--  BLANK --> 
+			<AttchementDate>2018-10-01T12:00:00:00</AttchementDate> <!--  BLANK --> 
+			<AddedBy>Client</AddedBy> <!--  BLANK --> 
+		</Attachment> 
+
+	</WOAttachments>
+	<WOInvoice>  <!--  not in this release --> 
+		<InvoiceDate>2018-08-22T11:27:06.583Z</InvoiceDate>
+		<BatchID>null</BatchID>
+		<BatchDate>null</BatchDate>
+		<CheckNumber>null</CheckNumber>
+		<CheckDate>null</CheckDate>
+		<CheckAmount>null</CheckAmount>
+		<CurrencyCode>null</CurrencyCode>
+		<InvNumber>RJTEST012</InvNumber>
+		<InvGeneralLedgerCode/>
+		<InvSubmittedDate>null</InvSubmittedDate>
+		<InvRejectedDate>null</InvRejectedDate>
+		<InvApprovedDate>null</InvApprovedDate>
+		<SubTotal>179.781</SubTotal>
+		<VendorTotalTax>0</VendorTotalTax>
+		<Total>179.781</Total>
+		<TotalCost>179.781</TotalCost>
+		<TotalLaborCost>123.12</TotalLaborCost>
+		<TotalFreightCost>0</TotalFreightCost>
+		<TotalMaterialCost>0</TotalMaterialCost>
+		<TotalPartsCost>0</TotalPartsCost>
+		<Tax1Name>UST</Tax1Name>
+		<Tax1Value>0</Tax1Value>
+		<Tax2Name>null</Tax2Name>
+		<Tax2Value>null</Tax2Value>
+		<Tax3Name>null</Tax3Name>
+		<Tax3Value>null</Tax3Value>
+		<Tax4Name>null</Tax4Name>
+		<Tax4Value>null</Tax4Value>
+		<Tax5Name>null</Tax5Name>
+		<Tax5Value>null</Tax5Value>
+		<CreateDateTime>2018-08-22T15:29:52.587Z</CreateDateTime>
+		<CreateUser>null</CreateUser>
+		<Description>Description of work performed entered by the provider </Description>
+		<LocationNumber>1002</LocationNumber>
+		<ProviderCompanyName>Northwest Pallet Services, LLC</ProviderCompanyName>
+		<ProviderCode>NOR61008IL</ProviderCode>
+		<LineItems>
+			<LineItem>
+				<Option>Overtime</Option>
+				<Quantity>1</Quantity>
+				<Item>Journeyman</Item>
+				<UnitCost>123.12</UnitCost>
+				<ChargeType>Labor</ChargeType>
+				<Id>13668587</Id>
+				<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+				<CreateUser>null</CreateUser>
+				<Description>Journeyman --  Overtime --  Stuff and things </Description>
+				<ServiceDate>null</ServiceDate>
+				<EquipmentID>null</EquipmentID>
+				<EquipmentName>null</EquipmentName>
+			</lineitem>
+		</LineItems>
+	</WOInvoice>
+	<WOQuotes>
+	
+			<WOQuote>
+			<QuoteDate>2018-08-22T11:27:06.583Z</QuoteDate>
+			<CurrencyCode>null</CurrencyCode>
+			<QuoteNumber>2</QuoteNumber>
+			<QuoteSubmittedDate>null</QuoteSubmittedDate>
+			<QuoteRejectedDate>null</QuoteRejectedDate>
+			<QuoteApprovedDate>null</QuoteApprovedDate>
+			<SubTotal>179.781</SubTotal>
+			<VendorTotalTax>0</VendorTotalTax>
+			<Total>179.781</Total>
+			<TotalCost>179.781</TotalCost>
+			<TotalLaborCost>123.12</TotalLaborCost>
+			<TotalFreightCost>0</TotalFreightCost>
+			<TotalMaterialCost>0</TotalMaterialCost>
+			<TotalPartsCost>0</TotalPartsCost>
+			<Tax1Name>UST</Tax1Name>
+			<Tax1Value>0</Tax1Value>
+			<Tax2Name>null</Tax2Name>
+			<Tax2Value>null</Tax2Value>
+			<Tax3Name>null</Tax3Name>
+			<Tax3Value>null</Tax3Value>
+			<Tax4Name>null</Tax4Name>
+			<Tax4Value>null</Tax4Value>
+			<Tax5Name>null</Tax5Name>
+			<Tax5Value>null</Tax5Value>
+			<IsInactive>false</IsInactive>
+			<CreateDateTime>2018-08-22T15:29:52.587Z</CreateDateTime>
+			<CreateUser>null</CreateUser>
+			<Description>Description of work performed entered by the provider </Description>
+			<LocationNumber>1002</LocationNumber>
+			<ProviderCompanyName>Northwest Pallet Services, LLC</ProviderCompanyName>
+			<ProviderCode>NOR61008IL</ProviderCode>
+			<LineItems>
+				<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+				
+								<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+								<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+			</LineItems>
+		</WOQuote>
+			<WOQuote>
+			<QuoteDate>2018-08-22T11:27:06.583Z</QuoteDate>
+			<CurrencyCode>null</CurrencyCode>
+			<QuoteNumber>1</QuoteNumber>
+			<QuoteSubmittedDate>null</QuoteSubmittedDate>
+			<QuoteRejectedDate>null</QuoteRejectedDate>
+			<QuoteApprovedDate>null</QuoteApprovedDate>
+			<SubTotal>179.781</SubTotal>
+			<VendorTotalTax>0</VendorTotalTax>
+			<Total>179.781</Total>
+			<TotalCost>179.781</TotalCost>
+			<TotalLaborCost>123.12</TotalLaborCost>
+			<TotalFreightCost>0</TotalFreightCost>
+			<TotalMaterialCost>0</TotalMaterialCost>
+			<TotalPartsCost>0</TotalPartsCost>
+			<Tax1Name>UST</Tax1Name>
+			<Tax1Value>0</Tax1Value>
+			<Tax2Name>null</Tax2Name>
+			<Tax2Value>null</Tax2Value>
+			<Tax3Name>null</Tax3Name>
+			<Tax3Value>null</Tax3Value>
+			<Tax4Name>null</Tax4Name>
+			<Tax4Value>null</Tax4Value>
+			<Tax5Name>null</Tax5Name>
+			<Tax5Value>null</Tax5Value>
+			<IsInactive>false</IsInactive>
+			<CreateDateTime>2018-08-22T15:29:52.587Z</CreateDateTime>
+			<CreateUser>null</CreateUser>
+			<Description>Description of work performed entered by the provider </Description>
+			<LocationNumber>1002</LocationNumber>
+			<ProviderCompanyName>Northwest Pallet Services, LLC</ProviderCompanyName>
+			<ProviderCode>NOR61008IL</ProviderCode>
+			<LineItems>
+				<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+
+								<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+								<LineItem>
+					<IsIncurred>false</IsIncurred>
+					<Option>Overtime</Option>
+					<Quantity>1</Quantity>
+					<Item>Journeyman</Item>
+					<UnitCost>123.12</UnitCost>
+					<ChargeType>Labor</ChargeType>
+					<Id>13668587</Id>
+					<CreateDateTime>2018-08-22T15:29:52.82Z</CreateDateTime>
+					<CreateUser>null</CreateUser>
+					<Description>Journeyman --  Overtime --  Stuff and things </Description>
+					<ServiceDate>null</ServiceDate>
+					<EquipmentID>null</EquipmentID>
+					<EquipmentName>null</EquipmentName>
+				</LineItem>
+			</LineItems>
+		</WOQuote>
+	</WOQuotes>
+</WorkOrder>

@@ -1,0 +1,68 @@
+<WorkOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <RoutingElements>
+        <Origin>FSELITE</Origin>
+        <!--  this is not filled out on messages that are sent. For messages that are received, this the system/client whom first created the workorder -->
+        <Source>FSELITE</Source>
+        <!--  This is the sender of the message -->
+        <Target>SI7</Target>
+        <!--  this is the recipient of the message -->
+        <MessageType>UPDATEWOSTATUS</MessageType>
+        <!--  this is the type of message  Finite list in Project document -->
+  
+    
+    </RoutingElements>
+    <Keys>
+        <Source_WO_ID>WEB-123456666666</Source_WO_ID>
+        <!--  the workorder number of the sender of the message:  SI7Object."workOrderNumber"  -->
+        <Unified_WO_ID></Unified_WO_ID>
+        <!--  This is managed and created by the WOBUS -->
+        <Target_WO_ID />
+        <!--  this is the workorder number of the recipient of the message -->
+        <SourceCompositeElements>
+            <!--  this is custom for each system/client we connect to -->
+            <SCElement>
+                <TypeCode>ORGID</TypeCode>
+                <!--  ORGID  -->
+                <Value>SI7</Value>
+                <!--  Service Insight 7 -->
+                <Description>Service Insight</Description>
+                <!--  Service  Insight -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>CustomerCode</TypeCode>
+                <!--  CustomerCode -->
+                <Value>C10284</Value>
+                <!--  SI7-IronMtn -->
+                <Description>Customer Deutsche Bank UK</Description>
+                <!--  Iron Mountian -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>Vendor</TypeCode>
+                <!--  Vendor -->
+                <Value>12312334</Value>
+                <!--   SI7Object.assignedName -->
+                <Description>FMP Facility Source Vendor Code</Description>
+                <!--   SI7Object.assignedName -->
+      
+            
+            </SCElement>
+            <SCElement>
+                <TypeCode>WorkSiteID</TypeCode>
+                <!--   WorkSiteID -->
+                <Value>WEL1233</Value>
+                <!--   SI7Object.Level_4 -->
+                <Description>Wells Fargo- East Main PHX</Description>
+                <!--   SI7Object.Level_4 -->
+      
+            
+            </SCElement>
+        </SourceCompositeElements>
+    </Keys>
+  
+      <WOCurrentStatus>INPRG</WOCurrentStatus>
+
+</WorkOrder>
